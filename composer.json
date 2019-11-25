@@ -1,0 +1,34 @@
+{
+    "name": "fomvasss/laravel-filterable",
+    "description": "Package for build filters in eloquent models",
+    "keywords": [
+        "filter",
+        "search",
+        "find",
+        "eloquent",
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Vasyl Fomin",
+            "email": "fomvasss@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "illuminate/support": "^5.8|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fomvasss\\Filterable\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fomvasss\\Filterable\\ServiceProvider"
+            ]
+        }
+    }
+}
