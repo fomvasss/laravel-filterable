@@ -232,4 +232,20 @@ trait Filterable
 
         return null;
     }
+
+    /**
+     * @return bool
+     */
+    public static function isFilterable(): bool
+    {
+        return (new self())->getFilterable() ? true : false;
+    }
+
+    /**
+     * @return bool
+     */
+    public static function isSearchable(): bool
+    {
+        return (new self())->getSearchable() ? true : false;
+    }
 }
